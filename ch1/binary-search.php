@@ -1,5 +1,4 @@
 <?php
-// Method:
 function binary_search(array $array, int $search): ?int
 {
 	$low = 0;
@@ -25,7 +24,6 @@ function binary_search(array $array, int $search): ?int
 	return null;
 }
 
-// Usage:
 $numbers = [1, 3, 5, 7, 9];
 
 assert(binary_search($numbers, 1) === 0);
