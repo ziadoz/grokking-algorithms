@@ -26,13 +26,13 @@ O(n) - Explained in Chapter 4
 
 ## Chapter 2
 
-### 2.1 
+### 2.1
 Linked List
 
 ### 2.2
 Linked List
 
-### 2.3 
+### 2.3
 Array
 
 ### 2.4
@@ -52,11 +52,11 @@ Searching - Faster (only searching a partial linked list)
 
 ### 3.1
 A method called `greet` with a `name` parameter of `Maggie` was called.
-This method called another method called `greet2` with the `name` parameter `Maggie` passed to it. 
+This method called another method called `greet2` with the `name` parameter `Maggie` passed to it.
 The `greet` method is waiting for `greet2` to complete before it can resume.
 
 # 3.2
-A recursive function with no base case would be stuck in an infinite loop. 
+A recursive function with no base case would be stuck in an infinite loop.
 It would continue to push calls onto the call stack until memory runs out, causing a stack overflow.
 
 
