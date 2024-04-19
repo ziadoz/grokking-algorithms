@@ -55,7 +55,7 @@ A method called `greet` with a `name` parameter of `Maggie` was called.
 This method called another method called `greet2` with the `name` parameter `Maggie` passed to it.
 The `greet` method is waiting for `greet2` to complete before it can resume.
 
-# 3.2
+### 3.2
 A recursive function with no base case would be stuck in an infinite loop.
 It would continue to push calls onto the call stack until memory runs out, causing a stack overflow.
 
