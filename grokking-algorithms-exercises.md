@@ -3,7 +3,7 @@
 [GitHub](https://github.com/egonSchiele/grokking_algorithms)
 
 
-## Chapter 1
+## Chapter 1 - Binary Search
 
 ### 1.1
 Log₂ 128 = 7
@@ -24,7 +24,7 @@ O(n)
 O(n) - Explained in Chapter 4
 
 
-## Chapter 2
+## Chapter 2 - Selection Sort
 
 ### 2.1
 Linked List
@@ -48,7 +48,7 @@ Inserting - Same (random access array then unshift onto end of linked list)
 Searching - Faster (only searching a partial linked list)
 
 
-## Chapter 3
+## Chapter 3 - Recursion and Call Stacks
 
 ### 3.1
 A method called `greet` with a `name` parameter of `Maggie` was called.
@@ -60,5 +60,5 @@ A recursive function with no base case would be stuck in an infinite loop.
 It would continue to push calls onto the call stack until memory runs out, causing a stack overflow.
 
 
-## Chapter 4
+## Chapter 4 - Divide and Conquer (D&C) and Quicksort
 
