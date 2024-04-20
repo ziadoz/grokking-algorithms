@@ -1,5 +1,5 @@
 <?php
-// @link: https://github.com/egonSchiele/grokking_algorithms/blob/master/01_introduction_to_algorithms/php/01_binary_search.php
+// @link https://github.com/egonSchiele/grokking_algorithms/blob/master/01_introduction_to_algorithms/php/01_binary_search.php
 
 function binary_search(array $array, int $search): ?int
 {

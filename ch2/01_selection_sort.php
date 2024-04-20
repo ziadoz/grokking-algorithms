@@ -1,5 +1,5 @@
 <?php
-// @link: https://github.com/egonSchiele/grokking_algorithms/blob/master/02_selection_sort/php/01_selection_sort.php
+// @link https://github.com/egonSchiele/grokking_algorithms/blob/master/02_selection_sort/php/01_selection_sort.php
 
 function find_smallest(array $array): int
 {
