@@ -6,13 +6,12 @@ class LinkedList
 	public function __construct(public mixed $value, public ?LinkedList $next = null)
 	{
 	}
-}
 
-function insert(LinkedList $insert, LinkedList $after): void
-{
-    $next = $after->next;
-    $after->next = $insert;
-    $insert->next = $next;
+    public function insert(LinkedList $insert): void
+    {
+        $insert->next = $this->next;
+        $this->next = $insert;
+    }
 }
 
 function assert_values(array $values, LinkedList $list): void
@@ -38,7 +37,7 @@ $list = new LinkedList(
 
 assert_values(['Foo', 'Bar', 'Baz', 'Qux'], $list);
 
-insert(new LinkedList(value: 'Quack'), $list->next->next);
+$list->next->next->insert(new LinkedList(value: 'Quack'));
 
 assert_values(['Foo', 'Bar', 'Baz', 'Quack', 'Qux'], $list);
 
