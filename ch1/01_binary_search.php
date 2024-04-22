@@ -3,27 +3,27 @@
 
 function binary_search(array $array, int $search): ?int
 {
-	$low = 0;
-	$high = count($array) - 1;
+    $low = 0;
+    $high = count($array) - 1;
 
-	while ($low <= $high) {
-		// Need to floor so we get an integer
-		$middle = floor(($low + $high) / 2);
+    while ($low <= $high) {
+        // Need to floor so we get an integer
+        $middle = floor(($low + $high) / 2);
 
-		// We can return if there's a matching
-		if ($array[$middle] === $search) { 
-			return $middle;
-		}
+        // We can return if there's a matching
+        if ($array[$middle] === $search) {
+            return $middle;
+        }
 
-		// Otherwise we need to move the low or high
-		if ($array[$middle] > $search) {
-			$high = $middle - 1;	
-		} else {
-			$low = $middle + 1;
-		}
-	}
+        // Otherwise we need to move the low or high
+        if ($array[$middle] > $search) {
+            $high = $middle - 1;
+        } else {
+            $low = $middle + 1;
+        }
+    }
 
-	return null;
+    return null;
 }
 
 $numbers = [1, 3, 5, 7, 9];

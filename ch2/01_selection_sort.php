@@ -3,26 +3,26 @@
 
 function find_smallest(array $array): int
 {
-	$smallest = 0;
+    $smallest = 0;
 
-	for ($i = 0; $i < count($array); $i++) {
-		if ($array[$i] < $array[$smallest]) {
-			$smallest = $i;
-		}
-	}
+    for ($i = 0; $i < count($array); $i++) {
+        if ($array[$i] < $array[$smallest]) {
+            $smallest = $i;
+        }
+    }
 
-	return $smallest;
+    return $smallest;
 }
 
 function selection_sort(array $array): array
 {
-	$results = [];
+    $results = [];
 
-	for ($i = 0, $count = count($array); $i < $count; $i++) {
-		$results[] = array_splice($array, find_smallest($array), 1)[0];
-	}
+    for ($i = 0, $count = count($array); $i < $count; $i++) {
+        $results[] = array_splice($array, find_smallest($array), 1)[0];
+    }
 
-	return $results;
+    return $results;
 }
 
 assert(find_smallest([1, 2, 3]) === 0);
