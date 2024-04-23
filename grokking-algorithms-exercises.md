@@ -1,7 +1,7 @@
 # Grokking Algorithms Exercises
 
 [GitHub](https://github.com/egonSchiele/grokking_algorithms)
-
+[Errata](https://www.adit.io/errata.html)
 
 ## Chapter 1 - Binary Search
 
