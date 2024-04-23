@@ -1,6 +1,6 @@
 <?php
 // @link https://github.com/egonSchiele/grokking_algorithms/blob/master/04_quicksort/php/01_loop_sum.php
-function sum(array $numbers): int
+function loop_sum(array $numbers): int
 {
     $total = 0;
 
@@ -11,4 +11,4 @@ function sum(array $numbers): int
     return $total;
 }
 
-assert(sum([1, 2, 3, 4]) === 10);
+assert(loop_sum([1, 2, 3, 4]) === 10);
