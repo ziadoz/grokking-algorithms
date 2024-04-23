@@ -1,4 +1,5 @@
 <?php
+// @link https://github.com/egonSchiele/grokking_algorithms/blob/master/04_quicksort/php/01_loop_sum.php
 function sum(array $numbers): int
 {
     $total = 0;
