@@ -40,12 +40,12 @@ Need to keep allocating memory and re-sorting the entries. Inserting entries is 
 
 ### 2.5
 **Hybrid Array + Linked List vs Array**:
-Inserting - Faster (random access array then unshift onto end of linked list)
-Searching - Slower (random access array, then search entire linked list)
+- Inserting - Faster (random access array then unshift onto end of linked list)
+- Searching - Slower (random access array, then search entire linked list)
 
 **Hybrid Array + Linked List vs Linked List**:
-Inserting - Same (random access array then unshift onto end of linked list)
-Searching - Faster (only searching a partial linked list)
+- Inserting - Same (random access array then unshift onto end of linked list)
+- Searching - Faster (only searching a partial linked list)
 
 
 ## Chapter 3 - Recursion and Call Stacks
@@ -61,4 +61,22 @@ It would continue to push calls onto the call stack until memory runs out, causi
 
 
 ## Chapter 4 - Divide and Conquer (D&C) and Quicksort
+
+### 4.1
+`php ch4/02_recursise_sum.php`
+
+### 4.2
+`php ch4/03_recursise_count.php`
+
+### 4.3
+`php ch4/04_recursise_max.php`
+
+### 4.4
+**Base Case for Binary Search:**
+The base case is an array containing 1 item.
+If the item we're looking for matches the item in the array, we're done.
+
+**Recursive Case for Binary Search:**
+The recursive case is splitting the array in half, and throwing away the half we know doesn't contain a match.
+Then we recursively perform another binary search on the remaining half.
 
