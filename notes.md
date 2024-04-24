@@ -116,6 +116,8 @@ Recursion elegantly uses the call stack, as each recursive call pushes another i
 
 ## Chapter 4 - Divide and Conquer (D&C) and Quicksort
 
+**Divide and Conquer**
+
 Divide and conquer is a recursive technique for problem solving.
 
 It works like this:
