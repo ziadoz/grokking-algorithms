@@ -101,7 +101,7 @@ The **base case** tells determines when the function does not call itself again 
 
 The **recursive case** tells the function to call itself again.
 
-I think of recursion as winding something up until it hits the innermost point and then begins to unwind. Like that hadouken code meme.
+I think of recursion as winding something up until it hits the innermost point before it begins to unwind again. Like that hadouken code meme.
 
 **Call Stack**
 
@@ -125,3 +125,15 @@ It works like this:
 
 Often the base case for an array or list is one with 0 or 1 items. For example, to sort an array or list with 0 or 1 items you do nothing.
 
+**Quicksort**
+
+Quicksort is a much faster sorting algorithm than selection sort.
+
+It works like this:
+
+- Identify a pivot point in the list.
+- Move items that are smaller into a list on the left.
+- Move items that are large into a list on the right.
+- This is called **partitioning**.
+- Repeat this process for the left and right lists.
+- Join the left, pivot and right lists together.
