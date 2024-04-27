@@ -118,14 +118,14 @@ Recursion elegantly uses the call stack, as each recursive call pushes another i
 
 **Divide and Conquer**
 
-Divide and conquer is a recursive technique for problem solving.
+Divide and conquer is a recursive technique for problem solving. It works by breaking a problem down into smaller and smaller pieces.
 
 It works like this:
 
 - You figure out the **base case**, which is the simplest possible case.
 - You divide or decrease your problem until it becomes the **base case**.
 
-Often the base case for an array or list is one with 0 or 1 items. For example, to sort an array or list with 0 or 1 items you do nothing.
+The base case is a list with 0 or 1 items. To sort a list with 0 or 1 items you do nothing.
 
 **Quicksort**
 
@@ -144,6 +144,18 @@ The worst case scenario for quicksort is choosing the first item as a pivot for 
 
 The best case scenario is choosing the middle item as a pivot, as the number of recursive calls/call stacks will be smaller. O(n) items * O(log n) call stacks = O(n log n)
 
-The best case is also the average case. If you always choose a random element in the array as a pivot, quicksort will complete in O(n log n) on average. One exception is if all the items are the same, which can be avoided with additional logic.
+The best case is also the average case. If you always choose a random element in the list as a pivot, quicksort will complete in O(n log n) on average. One exception is if all the items are the same, but this can be avoided with additional logic.
 
 Quicksort is one of the fastest sorting algorithms, and a good example of divide and conquer.
+
+Given two algorithms with the same big O notation running times, one can be consistently faster than the other. For example, quicksort is faster than mergesort.
+
+Constants (C) don't matter in big O notation:
+
+- Simple Search = 10ms per item (C) = 10ms * 4 billion items = 10ms * 4 billion operations = 463 days
+- Binary Search = 1s per item (C) = 1s * 4 billion items = 1s * 32 operations = 32 seconds
+
+The constants in these examples doesn't matter - binary search performs significantly less operations.
+
+
+## Chapter 5 - Hash Tables

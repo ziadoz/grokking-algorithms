@@ -80,3 +80,14 @@ If the item we're looking for matches the item in the array, we're done.
 The recursive case is splitting the array in half, and throwing away the half we know doesn't contain a match.
 Then we recursively perform another binary search on the remaining half.
 
+### 4.5
+O(n)
+
+### 4.6
+O(n)
+
+### 4.7
+O(1)
+
+### 4.8
+O(n²)
