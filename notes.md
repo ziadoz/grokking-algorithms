@@ -159,3 +159,17 @@ The constants in these examples doesn't matter - binary search performs signific
 
 
 ## Chapter 5 - Hash Tables
+
+A hash function is a function that given a string (e.g. `apple`) returns a number (e.g. `4`). The number returned will always be consistent for the string, so `apple` will always return `4`. Multiple strings can be mapped to numbers.
+
+A hash table is a combination of a hash function and an array. The number returned is the index of the value in the array that corresponds to the given string.
+
+If the hash function is given `apple` and returns `4` with the following array, we know the price is `0.67`:
+
+| 1    | 2    | 3    | 4    | 5    |
+|------|------|------|------|------|
+| 1.49 | 0.79 | 2.49 | 0.67 | 1.49 |
+
+A hash table is O(1), because looking up an item in the array using a string is instant.
+
+This type of one-to-one mapping is known as `injective function`.
