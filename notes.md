@@ -139,3 +139,11 @@ It works like this:
 - This is called **partitioning**.
 - Repeat this process for the left and right lists.
 - Join the left, pivot and right lists together.
+
+The worst case scenario for quicksort is choosing the first item as a pivot for an already sorted list. This will incur a recursive call/call stack per item, as everything will always end up in the right hand list. O(n) items * O(n) call stacks = O(n²)
+
+The best case scenario is choosing the middle item as a pivot, as the number of recursive calls/call stacks will be smaller. O(n) items * O(log n) call stacks = O(n log n)
+
+The best case is also the average case. If you always choose a random element in the array as a pivot, quicksort will complete in O(n log n) on average. One exception is if all the items are the same, which can be avoided with additional logic.
+
+Quicksort is one of the fastest sorting algorithms, and a good example of divide and conquer.
