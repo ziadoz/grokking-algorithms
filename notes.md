@@ -192,3 +192,7 @@ Some examples of using a hash table are:
 - A webpage cache (e.g. `facebook.com/contact => <p>Contact...</p>`)
 
 **Collisions**
+
+A collision is when multiple strings passed to a hash function map to the same underlying array item. This could cause data to be override.
+
+One solution would be to store the colliding items in a linked list in the array item, but this would mean the hash table is no longer instant, as the linked list would need to be traversed to find items in it.
