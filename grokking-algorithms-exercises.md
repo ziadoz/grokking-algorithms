@@ -91,3 +91,18 @@ O(1)
 
 ### 4.8
 O(n²)
+
+
+## Chapter 5 - Hash Tables
+
+### 5.1
+Consistent
+
+### 5.2
+Inconsistent
+
+### 5.3
+Inconsistent
+
+### 5.4
+Consistent (although only as an exercise, not reality)
