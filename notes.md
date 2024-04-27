@@ -178,9 +178,17 @@ A hash table is O(1), because looking up an item in the array using a string is 
 
 This type of one-to-one mapping is known as `injective function`.
 
-A hash table is perfect when you want to map one thing to another, and to look something up.
+A hash table is perfect when you want to:
+
+- Map one thing to another (modelling relationships from one thing to another).
+- Look something up instantly.
+- Filter out duplicates.
+- Caching or memoizing data to avoid work.
 
 Some examples of using a hash table are:
 
 - A phone book (`jenny => 8675309`, `emergency => 911`)
 - A DNS look up cache (e.g. `google.com => xxx.xxx.xxx.xxx`)
+- A webpage cache (e.g. `facebook.com/contact => <p>Contact...</p>`)
+
+**Collisions**
