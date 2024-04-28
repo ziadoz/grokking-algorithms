@@ -106,3 +106,22 @@ Inconsistent
 
 ### 5.4
 Consistent (although only as an exercise, not reality)
+
+### 5.5
+Phone Book (Esther, Ben, Bob, Dan)
+C. The hash function that uses the first letter of the string.
+D. The hash function that maps every letter in the string to a prime number.
+
+### 5.6
+Batteries (A, AA, AAA, AAAA)
+B. The hash function that returns the length of the string.
+D. The hash function that maps every letter in the string to a prime number.
+
+### 5.7
+Books (Maus, Fun Home, Watchmen)
+B. The hash function that returns the length of the string.
+C. The hash function that uses the first letter of the string.
+D. The hash function that maps every letter in the string to a prime number.
+
+
+## Chapter 6 - Breadth First Search

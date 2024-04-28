@@ -220,3 +220,9 @@ Hash functions aren't something you'd ever need to think about, but real world e
 - [MurmurHash in Rust](https://www.keiruaprod.fr/blog/2023/04/02/the-murmur-hashing-algorithm.html)
 - [Bit Rotation](https://www.geeksforgeeks.org/rotate-bits-of-an-integer/)
 
+O(1) = constant time = the time taken to perform the operation will stay the same regardless
+
+Hash tables are really fast for search, insert and delete, and catching duplicates.
+
+
+## Chapter 6 - Breadth First Search
