@@ -7,14 +7,27 @@
 // @link: https://onlinetoolz.net/bitshift#base=10&value=229&bits=8&steps=3&dir=l&type=circ&allsteps=1
 // @link: https://alexandra-zaharia.github.io/posts/bitwise-nuggets-rotate-number-to-the-left-on-byte-precision/
 
-function bin(int $n)
+function bin(int $n, int $bits = 8): string
 {
-    return sprintf('%08b', $n);
+    return sprintf('%0' . $bits . 'b', $n);
 }
 
-function rotate_left(int $n, int $d): int
+function rotate_left(int $n, int $d, int $bits = 8): int
 {
-    return ($n << $d) | ($n >> (32 - $d));
+    // Define a mask of 1s for the expected number of bits.
+    // For example:
+    // - (1 << 8) = 100000000 = 256 (9 bits) - 1 = 11111111 = 255 (8 bits).
+    // - (1 << 32) = 10000000000000000 = 65536 (17 bits) - 1 = 1111111111111111 = 65535 (16 bits)
+    $mask = (1 << $bits) - 1;
+
+    // Ensure the shift number is within the number of expected bits.
+    $d %= $bits;
+
+    // Shift the number left $n times (<<).
+    // Shift the number right INT_BITS - $d times (>>).
+    // Add the two together (|).
+    // Apply the mask (&).
+    return (($n << $d) | ($n >> ($bits - $d))) & $mask;
 }
 
 $rotations = [
@@ -26,5 +39,5 @@ foreach ($rotations as ['n' => $a, 'd' => $d, 'o' => $o]) {
     $rotated = rotate_left($a, $d);
 
     echo sprintf('%d (%s) ROL %d (%s)', $a, bin($a), $o, bin($o)) . "\n";
-    echo ($rotated === $o ? '✔️' : '❌') . ' ' . $rotated . "\n";
+    echo ($rotated === $o ? '✔️' : '❌') . ' ' . $rotated . "\n\n";
 }
