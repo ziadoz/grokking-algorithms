@@ -193,6 +193,30 @@ Some examples of using a hash table are:
 
 **Collisions**
 
-A collision is when multiple strings passed to a hash function map to the same underlying array item. This could cause data to be override.
+A collision is when multiple strings passed to a hash function map to the same underlying array item. This could cause data to be overridden.
 
-One solution would be to store the colliding items in a linked list in the array item, but this would mean the hash table is no longer instant, as the linked list would need to be traversed to find items in it.
+A solution is to have the array item point to a linked list, however this would mean the hash table no longer instant, as the linked list needs to be traversed.
+
+Avoiding collisions is vital to getting average case performance out of a hash table.
+
+The way to do this is by having a low load factor and a good hash function.
+
+**Load Factor**
+
+The load factor of a hash table is: `number of items / total number of array slots`.
+
+A load factor of 1 or greater means there's enough slots free.
+
+To make more room a new array is created, typically double the size of the original, and then the items are re-inserted into that. This is called resizing.
+
+Typically, resizing is done when the load factor is greater than 0.7.
+
+Resizing is expensive, but hash tables are still O(1) on average.
+
+Hash functions aren't something you'd ever need to think about, but real world examples are MurmurHash and CityHash.
+
+- [MurmurHash Wikipedia](https://en.wikipedia.org/wiki/MurmurHash)
+- [PHP 8.1 MurmurHash](https://php.watch/versions/8.1/MurmurHash3)
+- [MurmurHash in Rust](https://www.keiruaprod.fr/blog/2023/04/02/the-murmur-hashing-algorithm.html)
+- [Bit Rotation](https://www.geeksforgeeks.org/rotate-bits-of-an-integer/)
+
