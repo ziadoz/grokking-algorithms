@@ -1,5 +1,6 @@
 <?php
 // Part of MurmurHashing is bit rotation, which is shifting in a direction, and then appending the remainder bits to the other end.
+// Known as bit rotation or circular shifting.
 // ROL = Rotate Left, ROR = Rotate Right
 // @link: https://www.keiruaprod.fr/blog/2023/04/02/the-murmur-hashing-algorithm.html
 // @link: https://www.geeksforgeeks.org/rotate-bits-of-an-integer/
@@ -27,6 +28,11 @@ function rotate_left(int $n, int $d, int $bits = 8): int
     // Shift the number right INT_BITS - $d times (>>).
     // Add the two together (|).
     // Apply the mask (&).
+    // For example:
+    // - 100 = 01100100
+    // - 100 << 3 = 00100000 (011 at start is shifted off, zeros padded on the end).
+    // - 100 >> (8 - 3) = 00000011 (00100 at the end is shifted off, zeros padded on the start).
+    // - 00100000 + 00000011 = 00100011 (i.e. 011 has been shifted from the start to the end).
     return (($n << $d) | ($n >> ($bits - $d))) & $mask;
 }
 
