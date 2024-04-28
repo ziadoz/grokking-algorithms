@@ -36,14 +36,35 @@ function rotate_left(int $n, int $d, int $bits = 8): int
     return (($n << $d) | ($n >> ($bits - $d))) & $mask;
 }
 
-$rotations = [
+function rotate_right(int $n, int $d, int $bits = 8): int
+{
+    $mask = (1 << $bits) - 1;
+
+    $d %= $bits;
+
+    return (($n >> $d) | ($n << ($bits - $d))) & $mask;
+}
+
+$left_rotations = [
     ['n' => 100, 'd' => 3, 'o' => 35], // 01100100 -> 00100011
     ['n' => 229, 'd' => 3, 'o' => 47], // 11100101 -> 00101111
 ];
 
-foreach ($rotations as ['n' => $a, 'd' => $d, 'o' => $o]) {
+foreach ($left_rotations as ['n' => $a, 'd' => $d, 'o' => $o]) {
     $rotated = rotate_left($a, $d);
 
     echo sprintf('%d (%s) ROL %d (%s)', $a, bin($a), $o, bin($o)) . "\n";
+    echo ($rotated === $o ? '✔️' : '❌') . ' ' . $rotated . "\n\n";
+}
+
+$right_rotations = [
+    ['n' => 100, 'd' => 3, 'o' => 140], // 01100100 -> 10001100
+    ['n' => 229, 'd' => 3, 'o' => 188], // 11100101 -> 10111100
+];
+
+foreach ($right_rotations as ['n' => $a, 'd' => $d, 'o' => $o]) {
+    $rotated = rotate_right($a, $d);
+
+    echo sprintf('%d (%s) ROR %d (%s)', $a, bin($a), $o, bin($o)) . "\n";
     echo ($rotated === $o ? '✔️' : '❌') . ' ' . $rotated . "\n\n";
 }
