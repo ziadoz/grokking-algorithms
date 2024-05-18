@@ -125,3 +125,9 @@ D. The hash function that maps every letter in the string to a prime number.
 
 
 ## Chapter 6 - Breadth First Search
+
+### 6.1
+2
+
+### 6.2
+2

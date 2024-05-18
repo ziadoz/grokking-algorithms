@@ -260,8 +260,6 @@ It can be used for things such as spell checking (find closest actual word to th
 
 A breadth first search works by radiating out from starting point, so all the nodes 1 degree out are searched first, then all the nodes 2 degrees out are searched second etc.
 
-This is achieved using a queue. All the nodes 1 degree out are added to the queue first, then as each of those nodes is searched, their nodes are added to the queue if a match isn't found.
-
-This means the nodes are searched a degree at a time, radiating outwards.
+This is achieved using a queue. All the nodes 1 degree out are added to the queue first, then as each of those nodes is dequeued/searched, _their_ nodes are added to the queue if a match isn't found - radiating outwards.
 
 
