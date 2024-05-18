@@ -107,6 +107,8 @@ I think of recursion as winding something up until it hits the innermost point b
 
 A call stack is a data structure where new are items are pushed on to the top of the stack, and then popped off the top of the stack.
 
+LIFO = Last In, First Out
+
 You can imagine it as a stack of post-it notes.
 
 Internally computers and programming languages uses call stacks.
@@ -226,3 +228,40 @@ Hash tables are really fast for search, insert and delete, and catching duplicat
 
 
 ## Chapter 6 - Breadth First Search
+
+**Graphs**
+
+A graph is a data structure that models a set of connections, for example, routes to navigate from A to B, who owes who money or who is friends with whom.
+
+A graph consistents of nodes and edges. An edge connects one node to another, and it may or may not have a direction.
+
+The terminology for nodes on either side of an edge with a direction is "in-neighbour" or "out-neighbour".
+
+So given: `A -> B` A is an in-neighbour of B. B is an out-neighbour of A.
+
+**Queues**
+
+A queue is a data stucture that works like a real life queue. The person who joins the queue to get on a bus first will get on first, the person who joins the queue second will get on the bus second, etc.
+
+Unlike call stacks, which are LIFO, queues are FIFO:
+
+FIFO = First In, First Out
+
+Adding an item to the end of a queue is known an "enqueueing", and removing an item from the start of a queue is known as "dequeueing". Items in the queue can only be accessed this way, and not by an index like an array.
+
+**Breath First Search**
+
+A breadth first search is an algorithm to search a graph. It can be used to find out:
+
+1. Is there a path from A to B?
+2. What's the shortest path from A to B?
+
+It can be used for things such as spell checking (find closest actual word to the mispelt one), navigation (getting from point A to B) and crawling (like a search engine).
+
+A breadth first search works by radiating out from starting point, so all the nodes 1 degree out are searched first, then all the nodes 2 degrees out are searched second etc.
+
+This is achieved using a queue. All the nodes 1 degree out are added to the queue first, then as each of those nodes is searched, their nodes are added to the queue if a match isn't found.
+
+This means the nodes are searched a degree at a time, radiating outwards.
+
+
