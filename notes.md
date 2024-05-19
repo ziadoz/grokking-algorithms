@@ -239,6 +239,8 @@ The terminology for nodes on either side of an edge with a direction is "in-neig
 
 So given: `A -> B` A is an in-neighbour of B. B is an out-neighbour of A.
 
+If there is no edge direction (i.e. undirected) then the terminology is just "neighbour".
+
 **Queues**
 
 A queue is a data stucture that works like a real life queue. The person who joins the queue to get on a bus first will get on first, the person who joins the queue second will get on the bus second, etc.
@@ -262,4 +264,4 @@ A breadth first search works by radiating out from starting point, so all the no
 
 This is achieved using a queue. All the nodes 1 degree out are added to the queue first, then as each of those nodes is dequeued/searched, _their_ nodes are added to the queue if a match isn't found - radiating outwards.
 
-
+O(V + E) = O(Vertices + Edges)
