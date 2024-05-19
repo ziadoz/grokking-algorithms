@@ -142,3 +142,7 @@ Wake Up, Pack Lunch, Exercise, Brush Teeth, Eat Breakfast, Shower, Get Dressed
 
 ### 6.4
 A, C
+
+
+## Chapter 7 - Trees
+

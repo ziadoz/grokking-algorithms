@@ -241,6 +241,8 @@ So given: `A -> B` A is an in-neighbour of B. B is an out-neighbour of A.
 
 If there is no edge direction (i.e. undirected) then the terminology is just "neighbour".
 
+Traversing a graph can cause infinite loops because they can be cyclical, so it's necessary to keep track of what's been traversed to avoid this.
+
 **Queues**
 
 A queue is a data stucture that works like a real life queue. The person who joins the queue to get on a bus first will get on first, the person who joins the queue second will get on the bus second, etc.
@@ -262,6 +264,8 @@ It can be used for things such as spell checking (find closest actual word to th
 
 A breadth first search works by radiating out from starting point, so all the nodes 1 degree out are searched first, then all the nodes 2 degrees out are searched second etc.
 
+In effect the breadth first search algorithm traverses or walks the tree.
+
 This is achieved using a queue. All the nodes 1 degree out are added to the queue first, then as each of those nodes is dequeued/searched, _their_ nodes are added to the queue if a match isn't found - radiating outwards.
 
 O(V + E) = O(Vertices + Edges)
@@ -269,3 +273,19 @@ O(V + E) = O(Vertices + Edges)
 A topological sort can be used to sort a directed graph in order of of dependencies. So given `A -> B -> C`, C must be done before B, and B must be done before A.
 
 A tree is a special subset of graph where no edges ever point backwards. A tree is always a graph, but not all graphs are trees.
+
+
+## Chapter 7 - Trees
+
+**Trees**
+
+A tree is a specialised type of graph that is used in everything from compressiom algorithms (Huffman coding) to databases (balanced-tree indexes).
+
+In a tree the terminology for nodes is:
+
+- Root - A single node that has no parent and leads to all the other nodes (aka a "rooted tree").
+- Parent - A node that has child nodes belong to it.
+- Child - A node that belongs to a parent.
+- Leaf - A node with no children.
+
+Traversing a tree can never end up in an infinite loop because they only go in one direction.
