@@ -288,4 +288,4 @@ In a tree the terminology for nodes is:
 - Child - A node that belongs to a parent.
 - Leaf - A node with no children.
 
-Traversing a tree can never end up in an infinite loop because they only go in one direction.
+Traversing a tree can never end up in an infinite loop because they don't have cycles and only go in one direction.
