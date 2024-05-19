@@ -265,3 +265,7 @@ A breadth first search works by radiating out from starting point, so all the no
 This is achieved using a queue. All the nodes 1 degree out are added to the queue first, then as each of those nodes is dequeued/searched, _their_ nodes are added to the queue if a match isn't found - radiating outwards.
 
 O(V + E) = O(Vertices + Edges)
+
+A topological sort can be used to sort a directed graph in order of of dependencies. So given `A -> B -> C`, C must be done before B, and B must be done before A.
+
+A tree is a special subset of graph where no edges ever point backwards. A tree is always a graph, but not all graphs are trees.

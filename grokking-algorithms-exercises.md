@@ -131,3 +131,14 @@ D. The hash function that maps every letter in the string to a prime number.
 
 ### 6.2
 2
+
+### 6.3
+A = invalid
+B = valid
+C = invalid
+
+### 6.4
+Wake Up, Pack Lunch, Exercise, Brush Teeth, Eat Breakfast, Shower, Get Dressed
+
+### 6.4
+A, C

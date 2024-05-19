@@ -1,4 +1,5 @@
 <?php
+// @link: https://www.php.net/manual/en/spl.datastructures.php
 class MyQueue extends SplQueue
 {
     public function enqueueMany(string ...$values): void
