@@ -289,3 +289,7 @@ In a tree the terminology for nodes is:
 - Leaf - A node with no children.
 
 Traversing a tree can never end up in an infinite loop because they don't have cycles and only go in one direction.
+
+**Depth First Search**
+
+Depth first search essentially uses recursion to traverse each node's children until it hits a leaf. An example of how it could be used is to print out all the files in a filesystem tree. It **cannot** be used to find the shortest path from A to B like breadth first search can.
