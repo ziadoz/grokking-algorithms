@@ -288,8 +288,20 @@ In a tree the terminology for nodes is:
 - Child - A node that belongs to a parent.
 - Leaf - A node with no children.
 
+A tree is a "connected, acyclical graph".
+
 Traversing a tree can never end up in an infinite loop because they don't have cycles and only go in one direction.
 
 **Depth First Search**
 
 Depth first search essentially uses recursion to traverse each node's children until it hits a leaf. An example of how it could be used is to print out all the files in a filesystem tree. It **cannot** be used to find the shortest path from A to B like breadth first search can.
+
+**Binary Trees**
+
+A binary tree is a special type of tree where nodes can have a maximum of two children (hence binary, `1` or `0`), which are traditionally known as the left and right child.
+
+Subtrees in a binary tree may also be referred to as the left and right subtrees.
+
+Binary trees are exremetely common in computer science, and are used for things such as compression (Huffman coding) and database indexes (b-trees).
+
+
