@@ -146,3 +146,6 @@ A, C
 
 ## Chapter 7 - Trees
 
+N/A
+
+## Chapter 8 - Balanced Trees

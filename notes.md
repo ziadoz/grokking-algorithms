@@ -303,3 +303,6 @@ A binary tree is a special type of tree where nodes can have a maximum of two ch
 Subtrees in a binary tree may also be referred to as the left and right subtrees.
 
 Binary trees are exremetely common in computer science, and are used for things such as compression (Huffman coding) and database indexes (b-trees).
+
+
+## Chapter 8 - Balanced Trees
