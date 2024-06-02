@@ -306,3 +306,44 @@ Binary trees are exremetely common in computer science, and are used for things 
 
 
 ## Chapter 8 - Balanced Trees
+
+**Balanced Trees**
+
+A balanced binary search tree (BST) is a special type of tree. Each now has up to two children, known as the left and right child nodes. The left child is always smaller than it's parent, and the right child node is always larger. An effect of this is the root node's left children alway smaller, and its right children are always larger.
+
+To search a binary tree for a value we start at the root node, and then go left if the value is smaller, or right if its larger. We repeat this until either the value is found or we hit a leaf node, indicating there's no match.
+
+Binary trees are worst case O(n), best case O(log n). For example, worst case could be 7 nodes each a parent of another (essentially a linked list), the best case would be 7 nodes balanced across 2 depths (aka height of 2). Balancing a tree is the key to maintaining the optimal height for good performance.
+
+A balanced tree is O(log n) for search and insertion, making it faster than sorted arrays and linked lists.
+
+The height of a tree affects its performance.
+
+**AVL Balanced Tree**
+
+An AVL balanced tree is a form of self balancing tree that uses node rotation to re-balance nodes, which ensures optimal height and O(log n) performance.
+
+A height (e.g. 2) or balance factor can be stored (e.g. -1 left, 1 right) to determine when to rotate the nodes. The balance factor is the height of the left subtree minus the height of the right subtree. For example, if the balance factor difference is greater than one (e.g. -2 or 2) then the tree needs re-balancing.
+
+- [AVL Tree Wikipedia](https://en.wikipedia.org/wiki/AVL_tree)
+- [AVL Tree JavaPoint](https://www.javatpoint.com/avl-tree)
+- [AVL Tree Balancing](https://justinmchase.com/tag/avl-tree/)
+- [AVL Balance Factor](https://www.youtube.com/watch?v=zh27Tp8HV7E)
+
+**Splay Trees**
+
+A splay tree is a form of tree that rotates the most recent search match node to the root, meaning it can be looked up again faster.
+
+The trade off is that rotating the matching node to the root takes time, so searches could take linear time O(n). However O(n log n) is guaranteed on average, making a good choice for some scenarios.
+
+**B-Trees**
+
+A b-tree is a generalised form of binary tree, often used in database indexing. Nodes can have more than two children.
+
+Each node child node generally contains multiple keys (e.g. 3 and 6). Its left child nodes are lower (e.g. 1 and 2), centre child nodes are within (4 and 5), and right child nodes are higher (e.g. 7 and 8).
+
+Because a b-tree has more keys per node, it avoids seek time at the expense of reading time. We read more data in one go, which makes it fast.
+
+
+## Chapter 9 - Dijkstra's Algorithm
+
