@@ -63,4 +63,4 @@ def dijkstra(graph: dict, parents: dict, costs: dict, processed: dict):
         node = find_lowest_cost_node(costs, processed)
 
 dijkstra(graph, parents, costs, processed)
-print(costs)
+print(costs, parents)
