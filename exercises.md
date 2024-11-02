@@ -167,3 +167,13 @@ N/A
 ### 9.3
 
 4
+
+## Chapter 10 - Greedy Algorithms
+
+### 10.1
+
+Keep picking the largest box that will fit in the furniture truck until there's no room left. This will not give the optimal solution.
+
+### 10.2
+
+Keep picking the travel itinerary activity with the highest point/time value until you've no time left. This will not give the optimal solution.

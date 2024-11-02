@@ -357,3 +357,45 @@ The steps for the algorithm are:
 - Check whether there's a cheaper path to the node's out-neighbours, if so, update their costs.
 - Repeat until you've processed every node in the graph.
 - Calculate the final, shortest path.
+
+
+# Chapter 10 - Greedy Algorithms
+
+The greedy algorithm is a very simple problem-solving strategy. A benefit is they are also simple to come up with.
+
+The steps for the algorithm involve picking the next locally optimal move. Repeating this eventually leads to the global optimal solution. Sometimes the algorithm doesn't work, however perfect is the enemy of good, and it can solve many problems pretty well.
+
+## Classroom Scheduling Problem
+
+For example, if you had to schedule a school classroom for use, and you had lessons with start and end times that overlap, the solution would be:
+
+- Pick the class that ends soonest. This class goes first.
+- Pick the next class that starts after this class ends, and has ends soonest. This class goes next.
+- Repeat until the schedule is full.
+
+## Knapsack Problem
+
+Another example is the knapsack problem. If you have a backpack than can hold a fixed weight of items, and each item has a resale value, the greedy algorithm solution would be:
+
+- Pick the most expensive item under the remaining knapsack weight limit.
+- Pick the next most expensive item under the remaining knapsack weight limit.
+
+The algorithm will not necessarily solve this problem, as two low weight items might be more valuable than a higher weight one.
+
+##  Set Covering Problem
+
+Imagine you have radio stations that cover different US states, and you wanted to find the smallest set of stations to cover each 50 states. This would be extremely difficult to figure out. You'd have to list every possible subset of stations (the power set). It would take `O(2n)` time, where `n` is the number of radio stations, because there are `2n` subsets to work through.
+
+The greedy algorithm can provide an approximation very quickly:
+
+- Pick the station that covers the most states that haven't been covered yet. It's fine if some states have been covered before.
+- Repeat until all the states are covered.
+
+This will quickly and simply produce a close to optimal solution in `O(n2)` time.
+
+Approximation algorithms are judged by how fast they are, and how close to the optimal solution their results are.
+
+Set covering is known as an NP-hard problem.
+
+
+## Chapter 11 - Dynamic Programming

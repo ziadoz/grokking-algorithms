@@ -15,6 +15,7 @@ stations = {
     "kfive": set(["ca", "az"]),
 }
 
+# Uncomment to prove the answer is None if there's no solution.
 # stations = {
 #     "kone": set(["foo", "bar"]),
 #     "ktwo": set(["baz", "qux"]),
