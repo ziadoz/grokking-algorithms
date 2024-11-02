@@ -413,6 +413,7 @@ The image above shows the solution to the knapsack problem using dynamic program
 - Which thing goes across which axis may or may not matter depending on the problem.
 - You can add granularity (e.g. instead of 1lb sacks, do 0.5lb increment sacks).
 - You can't use fractions, a greedy algorithm would work better for this.
+- You can't solve problems unless they're discrete, if problems depend on further sub problems is won't work.
 
 The actual math involved in each the problem for each cell is:
 
