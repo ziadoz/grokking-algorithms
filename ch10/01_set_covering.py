@@ -15,6 +15,11 @@ stations = {
     "kfive": set(["ca", "az"]),
 }
 
+# stations = {
+#     "kone": set(["foo", "bar"]),
+#     "ktwo": set(["baz", "qux"]),
+# }
+
 def greedy(states_needed: dict, stations: dict) -> set:
     final_stations = set()
 
@@ -29,8 +34,12 @@ def greedy(states_needed: dict, stations: dict) -> set:
                 best_station = station
                 states_covered = covered
 
+        if best_station is None:
+            return None
+
         states_needed -= states_covered # Subtract the states we've covered from those that we still need to cover...
         final_stations.add(best_station)
+        stations.pop(best_station)
 
     return final_stations
 
