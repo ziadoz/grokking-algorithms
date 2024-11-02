@@ -347,3 +347,13 @@ Because a b-tree has more keys per node, it avoids seek time at the expense of r
 
 ## Chapter 9 - Dijkstra's Algorithm
 
+A weighted graph is a one where the edges have been assigned a cost.
+
+Dijkstra's Algorithm can be used to calculate the shortest path along a directed and weighted graph. However, Dijkstra's Algorithm doesn't work with negative weights, the Bellman-Ford algorithm is needed for that.  In contrast, a breadth first search from the previous chapter can be used to find the short path for an unweighted graph.
+
+The steps for the algorithm are:
+
+- Find the cheapest cost node.
+- Check whether there's a cheaper path to the node's out-neighbours, if so, update their costs.
+- Repeat until you've processed every node in the graph.
+- Calculate the final, shortest path.
