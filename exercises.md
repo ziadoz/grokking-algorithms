@@ -185,3 +185,9 @@ Keep picking the travel itinerary activity with the highest point/time value unt
 ### 11.1
 
 Yes. Because the Guitar 1lb $1500 + iPhone 1lb + $2000 + Keyboard 1lb $1500 = $4500, which is greater than the previous $4000 estimate.
+
+## 11.2
+
+Water 3lb 10, Food 2lb 9, Camera 1lb 6 = 25
+
+![](ch11/dynamic-programming-exericse.jpeg)
