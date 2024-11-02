@@ -399,3 +399,32 @@ Set covering is known as an NP-hard problem.
 
 
 ## Chapter 11 - Dynamic Programming
+
+Dynamic programming is a technique to solve hard problems by breaking them down into smaller sub-problems, and solving those first.
+
+This involves building a grid of rows and columns to sub-divide the problem:
+
+![](ch11/dynamic-programming.jpeg)
+
+The image above shows the solution to the knapsack problem using dynamic programming. New items are added twice (an iPhone and a Mechanical Keyboard).
+
+- The order of the items in the grid doesn't matter.
+- The value of the cells can never go down or decrease.
+- Which thing goes across which axis may or may not matter depending on the problem.
+- You can add granularity (e.g. instead of 1lb sacks, do 0.5lb increment sacks).
+- You can't use fractions, a greedy algorithm would work better for this.
+
+The actual math involved in each the problem for each cell is:
+
+```
+// i = row
+// j = column
+
+cell[i][j] = max of (
+    // the previous max
+    cell[i - 1][j]
+
+    // value of the current item + value of remaining space
+    cell[i - 1][j - value]
+)
+```

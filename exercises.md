@@ -168,6 +168,7 @@ N/A
 
 4
 
+
 ## Chapter 10 - Greedy Algorithms
 
 ### 10.1
@@ -177,3 +178,10 @@ Keep picking the largest box that will fit in the furniture truck until there's 
 ### 10.2
 
 Keep picking the travel itinerary activity with the highest point/time value until you've no time left. This will not give the optimal solution.
+
+
+## Chapter 11 - Dynamic Programming
+
+### 11.1
+
+Yes. Because the Guitar 1lb $1500 + iPhone 1lb + $2000 + Keyboard 1lb $1500 = $4500, which is greater than the previous $4000 estimate.
