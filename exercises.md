@@ -156,3 +156,14 @@ N/A
 
 ## Chapter 9 - Dijkstra's Algorithm
 
+### 9.1
+
+8
+
+### 9.2
+
+60 - Because the directions of the cheapest paths go away from the finish.
+
+### 9.3
+
+4
