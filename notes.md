@@ -384,14 +384,14 @@ The algorithm will not necessarily solve this problem, as two low weight items m
 
 ##  Set Covering Problem
 
-Imagine you have radio stations that cover different US states, and you wanted to find the smallest set of stations to cover each 50 states. This would be extremely difficult to figure out. You'd have to list every possible subset of stations (the power set). It would take `O(2n)` time, where `n` is the number of radio stations, because there are `2n` subsets to work through.
+Imagine you have radio stations that cover different US states, and you wanted to find the smallest set of stations to cover each 50 states. This would be extremely difficult to figure out. You'd have to list every possible subset of stations (the power set). It would take O(2n) time, where `n` is the number of radio stations, because there are `2n` subsets to work through.
 
 The greedy algorithm can provide an approximation very quickly:
 
 - Pick the station that covers the most states that haven't been covered yet. It's fine if some states have been covered before.
 - Repeat until all the states are covered.
 
-This will quickly and simply produce a close to optimal solution in `O(n2)` time.
+This will quickly and simply produce a close to optimal solution in O(n2) time.
 
 Approximation algorithms are judged by how fast they are, and how close to the optimal solution their results are.
 
