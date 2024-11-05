@@ -440,3 +440,6 @@ You can also use dynamic programming to solve the minimum coins problem (althoug
 - [GitHub Gist](https://gist.github.com/ziadoz/d7b82881a365819d593493aa69213ab9)
 - [Min Coins Recursion](https://www.youtube.com/watch?v=Rl8P9SJptQM)
 - [The Change Making Problem](https://www.youtube.com/watch?v=jgiZlGzXMBw)
+
+
+## Chapter 12 - K-Nearest Neighbours

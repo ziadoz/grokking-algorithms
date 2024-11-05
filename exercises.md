@@ -188,3 +188,6 @@ Yes. Because the Guitar 1lb $1500 + iPhone 1lb + $2000 + Keyboard 1lb $1500 = $4
 Water 3lb 10, Food 2lb 9, Camera 1lb 6 = 25
 
 ![](ch11/dynamic-programming-exericse.jpeg)
+
+
+## Chapter 12 - K-Nearest Neighbours
