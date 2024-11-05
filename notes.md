@@ -429,3 +429,14 @@ cell[i][j] = max of (
     cell[i - 1][j - value]
 )
 ```
+
+An example of dynamic programming is the Levenshtein Distance algorithm to determine how close two strings are, which is used for detecting spelling mistakes.
+
+- [Levenshtein Distance Wikipedia](https://en.wikipedia.org/wiki/Levenshtein_distance)
+- [Measuring Text Similarity Using the Levenshtein Distance](https://blog.paperspace.com/measuring-text-similarity-using-levenshtein-distance/)
+
+You can also use dynamic programming to solve the minimum coins problem (although it only works for simple examples):
+
+- [GitHub Gist](https://gist.github.com/ziadoz/d7b82881a365819d593493aa69213ab9)
+- [Min Coins Recursion](https://www.youtube.com/watch?v=Rl8P9SJptQM)
+- [The Change Making Problem](https://www.youtube.com/watch?v=jgiZlGzXMBw)
