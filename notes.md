@@ -439,7 +439,7 @@ You can also use dynamic programming to solve the minimum coins problem (althoug
 
 - [GitHub Gist](https://gist.github.com/ziadoz/d7b82881a365819d593493aa69213ab9)
 - [Min Coins Recursion](https://www.youtube.com/watch?v=Rl8P9SJptQM)
-- [The Change Making Problem](https://www.youtube.com/watch?v=jgiZlGzXMBw)
+- [The Change Making Problem](https://www.youtube.com/watch?v=jgiZlGzXMBw) - The solution here also doesn't work (gives 7 instead of -1).
 
 
 ## Chapter 12 - K-Nearest Neighbours
