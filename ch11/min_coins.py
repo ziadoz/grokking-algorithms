@@ -24,5 +24,5 @@ print(min_coins([2, 5, 4], 8)) # 2
 print(min_coins([100, 10_000, 5, 10], 115)) # 3
 print(min_coins([6], 7)) # -1
 print(min_coins([100, 5, 10, 15, 1, 2, 3, 4], 110)) # 2
-print(min_coins([10, 3, 50], 115)) # -1 (doesn't work, returns 7...)
+print(min_coins([10, 3, 50], 115)) # 7
 print(min_coins([1, 3, 5, 7], 16)) # 4
