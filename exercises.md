@@ -191,3 +191,18 @@ Water 3lb 10, Food 2lb 9, Camera 1lb 6 = 25
 
 
 ## Chapter 12 - K-Nearest Neighbours
+
+## 12.0
+
+Priyanka `(3,4,4,1,4)` vs Morpheus `(2,5,1,3,1)`
+
+`(3 - 2)^2 + (4 - 5)^2 + (4 - 1)^2 + (1 - 3)^2 + (4 - 1)^2 = 24`
+
+## 12.1
+
+You would normalise the numbers across the board.
+
+So if one user's average rating is 3 and the other 3.5, you'd align one to the other.
+
+## 12.2
+
