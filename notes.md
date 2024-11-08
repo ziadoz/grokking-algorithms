@@ -500,3 +500,63 @@ The high level steps for machine learning are:
 - Training (use KNN or SVM, train with 90% of the data)
 - Evaluation (get model to produce predictions and compare to 10% of data held back)
 - Parameter Tuning (adjust `k = ?` or other algorithm parameters and re-evaluate predictions)
+
+
+## Chapter 13 - Where To Go Next
+
+**Linear Regression:**
+
+Plot a bunch of points on an X/Y axis, and then draw a line that roughly tracks through all the points. This line can then be used to make predictions.
+
+**Inverted Indexes:**
+
+A hash table that relates two pieces of information (e.g. words and the webpages they appear on). Commonly used in search engine indexing.
+
+**Fourier Transform:**
+
+A rare, brilliant and elegant algorithm with a million use cases.
+
+- Given a smoothie could tell you the ingredients.
+- Given a song it could tell you all the individual frequencies.
+
+It's great for processing signals:
+
+- Used to boost bass and hide treble in music.
+- Used to compress music (MP3) by working out frequencies that contribute less to the song.
+- Used to compress JPEGs.
+- Used to predict earthquakes.
+- Used to analyse DNA.
+
+**Parallel Algorithms:**
+
+Algorithms are hard to make faster. Distributing them over multiple CPU cores can increase performance. However, it's difficult to do, and the gains aren't linear.
+
+Some complexities include:
+
+- The overhead of managing the parallelism (e.g. splitting and then re-merging arrays)..
+- Amdahl's Law says the performance gain of optimising a part of a system is limited by how much time overall that part actually takes (e.g. if it's only 1% of the overall time taken, the gains will be small).
+- Deciding how to load balance what you want to parallelise (e.g. one core doing all the easy tasks, and the other doing all the hard ones would be inefficient).
+
+**Map/Reduce:**
+
+A special type of parallel algorithm called a distributed algorithm, popularised by Google.
+
+Distribute the workload over multiple machines or cores to speed things up.
+
+**Bloom Filters and HyperLogLog:**
+
+Imagine you have a huge set of data, for example URLs of stories added to Reddit.
+
+Identifying if the story had been posted before could be done with a hash table, but it would use too much memory.
+
+A bloom filter is a probabilistic data structure. It can tell you if the story has been posted before, but it may return a false positive. It will never return a false negative though (i.e. if a story hasn't been posted before). Bloom filters take up very little space.
+
+HyperLogLog approximates the number of unique elements in a data set. It can't give an exact answer, but the benefit is it uses a fraction of the memory typically required to do this.
+
+**HTTPs and Diffie Hellman Key Exchange:**
+
+An algorithm used in HTTPs to generate private and public keys a server can exchange.
+
+The client and server each generate a private key, and a common pattern, which is overlayed on their private key to produce public keys which can be exchanged and used to decrypt each others messages.
+
+TLS uses Ephemeral Diffie Hellman, which means the private keys are discarded per connection, so exposure it limited if leaked.
