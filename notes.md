@@ -555,7 +555,7 @@ HyperLogLog approximates the number of unique elements in a data set. It can't g
 
 **HTTPs and Diffie Hellman Key Exchange:**
 
-An algorithm used in HTTPs to generate private and public keys a server can exchange.
+An algorithm used in HTTPS to generate private and public keys a server can exchange.
 
 The client and server each generate a private key, and a common pattern, which is overlayed on their private key to produce public keys which can be exchanged and used to decrypt each others messages.
 
