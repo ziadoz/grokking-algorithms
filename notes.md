@@ -27,7 +27,7 @@ There's no known fast solution to this.
 
 O(n!) = super slow time
 
-Alogirthms aren't measured using speed, they're measured in the growth of the number of operations - called big O notation.
+Alogrithms aren't measured using speed, they're measured in the growth of the number of operations - called big O notation.
 
 Big O notation established the **worst** case run time.
 
@@ -443,3 +443,39 @@ You can also use dynamic programming to solve the minimum coins problem:
 
 
 ## Chapter 12 - K-Nearest Neighbours
+
+The K-Nearest Neighbours (KNN) algorithm allows you build a classification system.
+
+It starts with feature extraction. For example if you were attempting to classify oranges and grapefruits, the features could be "size" and "redness". You can then plot these on a X/Y axis graph.
+
+With the features plotted on an X/Y graph, you can then use the Pythagorean formula `√ (x - x₂)² + (y - y₂)²` to determine the distance between them. This could be used to build a recommendation algorithm (e.g. similar movie preferences).
+
+You can also produce regressions, which is predicting a response (e.g. how many loaves a bakery should cook based on previous week/weekdays, sports events, weather, loaves sold). This involves finding the nearest neighbours, and then determining the average value.
+
+`k` refers to the number of nearest neighbours (e.g. `k = 4` means we want the four nearest neighbours).
+
+- **Feature Extraction**: Identify the features of the things you want to classify.
+- **Classification**: Classifying things in different groups or taxonomies.
+- **Regression**: Predicting a response.
+
+**Bakery Regression Example:**
+
+vector = `(weather 1 - 5, weekend/holiday 1 | 0, sports event 1 | 0) = loaves sold`
+
+- A: `(5, 1, 0) = 300 loaves`
+- B: `(3, 1, 1) = 225 loaves`
+- C: `(1, 1, 0) = 75 loaves`
+- D: `(4, 0, 1) = 200 loaves`
+- E: `(4, 0, 0) = 150 loaves`
+- F: `(2, 0, 0) = 350 loaves`
+
+Predicate number of loaves needed to bake for `(4, 1, 0)` with `k = 4`:
+
+- A: `(4 - 5)^2 + (1 - 1)^2 + (0 - 0)^2 = 1`
+- B: `(4 - 3)^2 + (1 - 1)^2 + (0 - 1)^2 = 2`
+- C: `(4 - 1)^2 + (1 - 1)^2 + (0 - 0)^2 = 9`
+- D: `(4 - 4)^2 + (1 - 0)^2 + (0 - 1)^2 = 2`
+- E: `(4 - 4)^2 + (1 - 0)^2 + (0 - 0)^2 = 1`
+- F: `(4 - 2)^2 + (1 - 0)^2 + (0 - 0)^2 = 5`
+
+So `k = 4` are A, B, D and E: `(300 + 225 + 200 + 150) / 4 = 218.75` loaves should be baked!
