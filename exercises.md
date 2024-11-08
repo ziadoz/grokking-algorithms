@@ -207,3 +207,7 @@ So if one user's average rating is 3 and the other 3.5, you'd align one to the o
 ## 12.2
 
 You would increase the weights of the influencers' movie ratings so they're more valued than regular users.
+
+## 12.3
+
+It's too low. You'd need many more than five neighbours to give accurate film recommendations.

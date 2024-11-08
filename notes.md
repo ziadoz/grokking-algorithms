@@ -479,3 +479,9 @@ Predicate number of loaves needed to bake for `(4, 1, 0)` with `k = 4`:
 - F: `(4 - 2)^2 + (1 - 0)^2 + (0 - 0)^2 = 5`
 
 So `k = 4` are A, B, D and E: `(300 + 225 + 200 + 150) / 4 = 218.75` loaves should be baked!
+
+**Cosine Similarity** is an alternative to using the distance formula, as it compares the angle between two vectors, rather than distance. As example, this could better account for two users who might have similar tastes, but where one rates things movies more conservatively than the other.
+
+Picking features to extract is important, as incorrect ones might give poor results. For example, asking someone to only rate comedy files wouldn't tell you anything about what they think of horror films (bias).
+
+If you have `n` classified things, you should look at `sqrt(n)` neighbours as a good rule of thumb.
