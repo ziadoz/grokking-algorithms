@@ -482,6 +482,21 @@ So `k = 4` are A, B, D and E: `(300 + 225 + 200 + 150) / 4 = 218.75` loaves shou
 
 **Cosine Similarity** is an alternative to using the distance formula, as it compares the angle between two vectors, rather than distance. As example, this could better account for two users who might have similar tastes, but where one rates things movies more conservatively than the other.
 
-Picking features to extract is important, as incorrect ones might give poor results. For example, asking someone to only rate comedy files wouldn't tell you anything about what they think of horror films (bias).
+Picking features to extract is vital, as incorrect or biased features might give poor results. For example, asking someone to only rate comedy files wouldn't tell you anything about what they think of horror films.
 
 If you have `n` classified things, you should look at `sqrt(n)` neighbours as a good rule of thumb.
+
+KNN is used in machine learning, some examples are:
+
+- Optical Character Recognition (OCR): Identify and measure curves, lines and points of existing numbers.
+- Spam filtering: Naive Bates Classifier. Probability words will show up in a spam email.
+- Stock market predictions: Very difficult to extract useful features, or predict the future. Too many variables.
+
+The high level steps for machine learning are:
+
+- Gathering Data (e.g. asking users for film ratings)
+- Cleaning Data (e.g. removing users who randomly rank films for fun)
+- Extracting Features
+- Training (use KNN or SVM, train with 90% of the data)
+- Evaluation (get model to produce predictions and compare to 10% of data held back)
+- Parameter Tuning (adjust `k = ?` or other algorithm parameters and re-evaluate predictions)
