@@ -1,4 +1,4 @@
-def min_coins(coins, amount):
+def min_coins(coins: list, amount: int):
     coins = [coin for coin in coins if coin < amount]
 
     if len(coins) == 0:
