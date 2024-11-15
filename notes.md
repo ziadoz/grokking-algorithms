@@ -560,3 +560,21 @@ An algorithm used in HTTPS to generate private and public keys a server can exch
 The client and server each generate a private key, and a common pattern, which is overlayed on their private key to produce public keys which can be exchanged and used to decrypt each others messages.
 
 TLS uses Ephemeral Diffie Hellman, which means the private keys are discarded per connection, so exposure it limited if leaked.
+
+**Locality-Sensitive Hashing:**
+
+Hashing two similar strings would typically produce two entirely different hashes. However, it's also useful to be able produce similar hashes depending on how much has changed.
+
+This can be done using Simhash, which Google use to detect duplicates when crawling webpages, detecting plagiarised or similar student essays, or detecting copyrighted content.
+
+**Min Heaps and Priority Queues:**
+
+A min heap is a tree structure that holds numbers, with the lowest being at the root. This means you can find the smallest number in O(1) time. You can also pop off the smallest number root node to get to the next smallest number in O(log n) time. A max heap is basically the reverse.
+
+You can use these to sort numbers quickly by putting them in a min heap and then repeatedly popping off the root node, which contains the smallest number.
+
+Heaps are great for implementing priority queues. Create a max heap of priorities and then pop off the root node max value.
+
+**Linear Programming:**
+
+An advanced algorithm used to maximise something when given linear constraints. For example, if you need a specific amount of material and buttons to make totes and t-shirts, but t-shirts sell for more, it could tell you how to maximise the materials you currently had available for profit.
