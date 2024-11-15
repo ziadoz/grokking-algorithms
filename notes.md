@@ -330,6 +330,8 @@ A height (e.g. 2) or balance factor can be stored (e.g. -1 left, 1 right) to det
 - [AVL Tree Balancing](https://justinmchase.com/tag/avl-tree/)
 - [AVL Balance Factor](https://www.youtube.com/watch?v=zh27Tp8HV7E)
 
+The log of AVL is typically base 2, however a balanced tree might still have gaps in it (i.e. not every height of the tree has the same nodes in). In this case, the log is phi, aka the golden ration ~1.618, which is not quite as good as a perfectly balanced tree, but very close.
+
 **Splay Trees**
 
 A splay tree is a form of tree that rotates the most recent search match node to the root, meaning it can be looked up again faster.
