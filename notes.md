@@ -580,3 +580,48 @@ Heaps are great for implementing priority queues. Create a max heap of prioritie
 **Linear Programming:**
 
 An advanced algorithm used to maximise something when given linear constraints. For example, if you need a specific amount of material and buttons to make totes and t-shirts, but t-shirts sell for more, it could tell you how to maximise the materials you currently had available for profit.
+
+## Appendix - NP Hard Problems
+
+**Optimisation Problems:**
+
+Problems where the decision is no yes/no (e.g. what's the shortest route?)
+
+**Decisions Problems:**
+
+Problems where the question has a yes/no answer (e.g. is any road on the route 5 miles long?).
+
+These are NP complete problems.
+
+**Satisfiability Problems (SAT):**
+
+Problems where a bunch of conditions must all be satisfied (e.g. three people all have favourite pizza toppings, or toppings they won't eat, make a pizza from the available ones that satisfies them all).
+
+SAT problems start with a boolean formula, which is then satisfied by setting the variables:
+
+```
+pepperoni = ? # true
+sausage = ? # false
+olives = ? # false
+onions = ? # true
+
+if pepperoni and (olives or onions):
+    print("pizza")
+```
+
+SAT problems were the first NP complete problem. They are decision problems.
+
+SAT problems can get hard, and require extensive truth tables to and operations (e.g. O(2n)) to solve.
+
+**Reduction:**
+
+Reducing a complex problem to a simpler one (e.g. multiply binary numbers could be simplified by converting the binary numbers to decimal).
+
+**NP:**
+
+- P: Quick to solve, quick to verify.
+- NP: Quick to solve, may or may not be quick to verify.
+- NP Hard: If any problem in NP can be reduced to it.
+- NP Complete: A problem that is both NP and NP Hard.
+- If we find a quick algorithm for every NP problem, then P = NP.
+- Any problem in NP can be reduced to a problem in NP Hard.
