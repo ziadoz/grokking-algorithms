@@ -460,7 +460,7 @@ You can also produce regressions, which is predicting a response (e.g. how many 
 - **Classification**: Classifying things in different groups or taxonomies.
 - **Regression**: Predicting a response.
 
-**Bakery Regression Example:**
+**Bakery Regression Example**
 
 vector = `(weather 1 - 5, weekend/holiday 1 | 0, sports event 1 | 0) = loaves sold`
 
@@ -506,15 +506,15 @@ The high level steps for machine learning are:
 
 ## Chapter 13 - Where To Go Next
 
-**Linear Regression:**
+**Linear Regression**
 
 Plot a bunch of points on an X/Y axis, and then draw a line that roughly tracks through all the points. This line can then be used to make predictions.
 
-**Inverted Indexes:**
+**Inverted Indexes**
 
 A hash table that relates two pieces of information (e.g. words and the webpages they appear on). Commonly used in search engine indexing.
 
-**Fourier Transform:**
+**Fourier Transform**
 
 A rare, brilliant and elegant algorithm with a million use cases.
 
@@ -529,7 +529,7 @@ It's great for processing signals:
 - Used to predict earthquakes.
 - Used to analyse DNA.
 
-**Parallel Algorithms:**
+**Parallel Algorithms**
 
 Algorithms are hard to make faster. Distributing them over multiple CPU cores can increase performance. However, it's difficult to do, and the gains aren't linear.
 
@@ -539,13 +539,13 @@ Some complexities include:
 - Amdahl's Law says the performance gain of optimising a part of a system is limited by how much time overall that part actually takes (e.g. if it's only 1% of the overall time taken, the gains will be small).
 - Deciding how to load balance what you want to parallelise (e.g. one core doing all the easy tasks, and the other doing all the hard ones would be inefficient).
 
-**Map/Reduce:**
+**Map/Reduce**
 
 A special type of parallel algorithm called a distributed algorithm, popularised by Google.
 
 Distribute the workload over multiple machines or cores to speed things up.
 
-**Bloom Filters and HyperLogLog:**
+**Bloom Filters and HyperLogLog**
 
 Imagine you have a huge set of data, for example URLs of stories added to Reddit.
 
@@ -555,7 +555,7 @@ A bloom filter is a probabilistic data structure. It can tell you if the story h
 
 HyperLogLog approximates the number of unique elements in a data set. It can't give an exact answer, but the benefit is it uses a fraction of the memory typically required to do this.
 
-**HTTPs and Diffie Hellman Key Exchange:**
+**HTTPs and Diffie Hellman Key Exchange**
 
 An algorithm used in HTTPS to generate private and public keys a server can exchange.
 
@@ -563,13 +563,13 @@ The client and server each generate a private key, and a common pattern, which i
 
 TLS uses Ephemeral Diffie Hellman, which means the private keys are discarded per connection, so exposure it limited if leaked.
 
-**Locality-Sensitive Hashing:**
+**Locality-Sensitive Hashing**
 
 Hashing two similar strings would typically produce two entirely different hashes. However, it's also useful to be able produce similar hashes depending on how much has changed.
 
 This can be done using Simhash, which Google use to detect duplicates when crawling webpages, detecting plagiarised or similar student essays, or detecting copyrighted content.
 
-**Min Heaps and Priority Queues:**
+**Min Heaps and Priority Queues**
 
 A min heap is a tree structure that holds numbers, with the lowest being at the root. This means you can find the smallest number in O(1) time. You can also pop off the smallest number root node to get to the next smallest number in O(log n) time. A max heap is basically the reverse.
 
@@ -577,23 +577,23 @@ You can use these to sort numbers quickly by putting them in a min heap and then
 
 Heaps are great for implementing priority queues. Create a max heap of priorities and then pop off the root node max value.
 
-**Linear Programming:**
+**Linear Programming**
 
 An advanced algorithm used to maximise something when given linear constraints. For example, if you need a specific amount of material and buttons to make totes and t-shirts, but t-shirts sell for more, it could tell you how to maximise the materials you currently had available for profit.
 
 ## Appendix - NP Hard Problems
 
-**Optimisation Problems:**
+**Optimisation Problems**
 
 Problems where the decision is no yes/no (e.g. what's the shortest route?)
 
-**Decisions Problems:**
+**Decisions Problems**
 
 Problems where the question has a yes/no answer (e.g. is any road on the route 5 miles long?).
 
 These are NP complete problems.
 
-**Satisfiability Problems (SAT):**
+**Satisfiability Problems (SAT)**
 
 Problems where a bunch of conditions must all be satisfied (e.g. three people all have favourite pizza toppings, or toppings they won't eat, make a pizza from the available ones that satisfies them all).
 
@@ -613,11 +613,11 @@ SAT problems were the first NP complete problem. They are decision problems.
 
 SAT problems can get hard, and require extensive truth tables to and operations (e.g. O(2n)) to solve.
 
-**Reduction:**
+**Reduction**
 
 Reducing a complex problem to a simpler one (e.g. multiply binary numbers could be simplified by converting the binary numbers to decimal).
 
-**NP:**
+**NP**
 
 - P: Quick to solve, quick to verify.
 - NP: Quick to solve, may or may not be quick to verify.
